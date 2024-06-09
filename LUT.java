@@ -225,6 +225,12 @@ public class LUT {
         return (r[rv & 0xFF] << 16) + (g[gv & 0xFF] << 8) + b[bv & 0xFF];
     }
 
+    /**
+     * Apply this lookup table to the given source image.
+     *
+     * @param source Input image.
+     * @return Output image.
+     */
     public BufferedImage apply(BufferedImage source) {
         int width = source.getWidth();
         int height = source.getHeight();

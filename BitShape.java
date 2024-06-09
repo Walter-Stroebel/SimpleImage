@@ -16,6 +16,11 @@ public class BitShape implements Iterable<Point> {
     private final BitSet bs = new BitSet();
     private final int W;
 
+    /**
+     * Create a BitShape with a width W.
+     *
+     * @param W
+     */
     public BitShape(int W) {
         this.W = W;
     }
